@@ -1,27 +1,26 @@
 //
-//  BearbrickViewController.m
-//  ViewMaster
+//  BearBrickTableViewController.m
+//  REMenuExample
 //
-//  Created by bearbrick on 2015/01/13.
-//  Copyright (c) 2015年 HiroyukiHamana. All rights reserved.
+//  Created by HiroyukiHamana on 2015/01/13.
+//  Copyright (c) 2015年 Roman Efimov. All rights reserved.
 //
 
-#import "BearbrickViewController.h"
+#import "BearBrickTableViewController.h"
 
-@interface BearbrickViewController ()
+
+@interface BearBrickTableViewController ()
+@property (strong, nonatomic) IBOutlet UITableView *tableView_Name;
 
 @end
 
-@implementation BearbrickViewController
+@implementation BearBrickTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self.navigationController action:@selector(toggleMenu)];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,26 +31,41 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 2;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSLog(@"hamana_cellForRowAtIndexPath");
+    
+    UITableViewCell *cell = [_tableView_Name dequeueReusableCellWithIdentifier:@"CellId" forIndexPath:indexPath];
+    
+    
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellId"];
+    }
+    
+    
+    cell.textLabel.text = @"sample1";      //それをtextlabelに代入している
+//    cell.imageView.image = [UIImage imageNamed:ICON_HEART];
+    
+    
+    //  cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;//UITableViewCellAccessoryDetailDisclosureButton;       //➡️に着いてる矢印みたいなやつの表示スタイル
+    
+    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;    //セルの➡️のスタイルの変更
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

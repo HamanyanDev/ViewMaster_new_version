@@ -56,8 +56,6 @@
 		2E4BB70D1A65628F00C0F260 /* QuickLookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4BB70B1A65628F00C0F260 /* QuickLookViewController.xib */; };
 		2E4BB7111A6562CC00C0F260 /* FBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BB70F1A6562CC00C0F260 /* FBTableViewController.m */; };
 		2E4BB7121A6562CC00C0F260 /* FBTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4BB7101A6562CC00C0F260 /* FBTableViewController.xib */; };
-		2E4BB7161A6562EE00C0F260 /* BearbrickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BB7141A6562EE00C0F260 /* BearbrickViewController.m */; };
-		2E4BB7171A6562EE00C0F260 /* BearbrickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4BB7151A6562EE00C0F260 /* BearbrickViewController.xib */; };
 		2E4BB71E1A65632700C0F260 /* SWCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BB7191A65632700C0F260 /* SWCustomCell.m */; };
 		2E4BB71F1A65632700C0F260 /* SWCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4BB71A1A65632700C0F260 /* SWCustomCell.xib */; };
 		2E4BB7201A65632700C0F260 /* SWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BB71C1A65632700C0F260 /* SWTableViewController.m */; };
@@ -74,6 +72,8 @@
 		2E4BB7411A65681A00C0F260 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BB73B1A65681A00C0F260 /* CommonUtil.m */; };
 		2E4BB7421A65681A00C0F260 /* FileManageHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BB73E1A65681A00C0F260 /* FileManageHelp.m */; };
 		2E4BB7431A65681A00C0F260 /* ForAlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BB7401A65681A00C0F260 /* ForAlertDialog.m */; };
+		2E4BB7481A656C8B00C0F260 /* BearBrickTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BB7461A656C8B00C0F260 /* BearBrickTableViewController.m */; };
+		2E4BB7491A656C8B00C0F260 /* BearBrickTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4BB7471A656C8B00C0F260 /* BearBrickTableViewController.xib */; };
 		2EAF80901A518DFC002AF2A3 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF80851A518DFC002AF2A3 /* NSMutableArray+SWUtilityButtons.m */; };
 		2EAF80911A518DFC002AF2A3 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF80871A518DFC002AF2A3 /* SWCellScrollView.m */; };
 		2EAF80921A518DFC002AF2A3 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF80891A518DFC002AF2A3 /* SWLongPressGestureRecognizer.m */; };
@@ -232,9 +232,6 @@
 		2E4BB70E1A6562CC00C0F260 /* FBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBTableViewController.h; path = FacebookViewController/FBTableViewController.h; sourceTree = "<group>"; };
 		2E4BB70F1A6562CC00C0F260 /* FBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBTableViewController.m; path = FacebookViewController/FBTableViewController.m; sourceTree = "<group>"; };
 		2E4BB7101A6562CC00C0F260 /* FBTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FBTableViewController.xib; path = FacebookViewController/FBTableViewController.xib; sourceTree = "<group>"; };
-		2E4BB7131A6562EE00C0F260 /* BearbrickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BearbrickViewController.h; sourceTree = "<group>"; };
-		2E4BB7141A6562EE00C0F260 /* BearbrickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearbrickViewController.m; sourceTree = "<group>"; };
-		2E4BB7151A6562EE00C0F260 /* BearbrickViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BearbrickViewController.xib; sourceTree = "<group>"; };
 		2E4BB7181A65632700C0F260 /* SWCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCustomCell.h; path = SWCustomViewController/SWCustomCell.h; sourceTree = "<group>"; };
 		2E4BB7191A65632700C0F260 /* SWCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCustomCell.m; path = SWCustomViewController/SWCustomCell.m; sourceTree = "<group>"; };
 		2E4BB71A1A65632700C0F260 /* SWCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SWCustomCell.xib; path = SWCustomViewController/SWCustomCell.xib; sourceTree = "<group>"; };
@@ -263,6 +260,9 @@
 		2E4BB73E1A65681A00C0F260 /* FileManageHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileManageHelp.m; path = Z_otherUtil/FileManageHelp.m; sourceTree = "<group>"; };
 		2E4BB73F1A65681A00C0F260 /* ForAlertDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForAlertDialog.h; path = Z_otherUtil/ForAlertDialog.h; sourceTree = "<group>"; };
 		2E4BB7401A65681A00C0F260 /* ForAlertDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForAlertDialog.m; path = Z_otherUtil/ForAlertDialog.m; sourceTree = "<group>"; };
+		2E4BB7451A656C8B00C0F260 /* BearBrickTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BearBrickTableViewController.h; sourceTree = "<group>"; };
+		2E4BB7461A656C8B00C0F260 /* BearBrickTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearBrickTableViewController.m; sourceTree = "<group>"; };
+		2E4BB7471A656C8B00C0F260 /* BearBrickTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BearBrickTableViewController.xib; sourceTree = "<group>"; };
 		2EAF80841A518DFC002AF2A3 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
 		2EAF80851A518DFC002AF2A3 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
 		2EAF80861A518DFC002AF2A3 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
@@ -472,21 +472,21 @@
 		2E4BB6CA1A64188A00C0F260 /* ReMenuView */ = {
 			isa = PBXGroup;
 			children = (
+				2E4BB7451A656C8B00C0F260 /* BearBrickTableViewController.h */,
+				2E4BB7461A656C8B00C0F260 /* BearBrickTableViewController.m */,
+				2E4BB7471A656C8B00C0F260 /* BearBrickTableViewController.xib */,
 				2E4BB6CB1A64188A00C0F260 /* ActivityViewController.h */,
 				2E4BB6CC1A64188A00C0F260 /* ActivityViewController.m */,
 				2E4BB6CD1A64188A00C0F260 /* ExploreViewController.h */,
 				2E4BB6CE1A64188A00C0F260 /* ExploreViewController.m */,
 				2E4BB6CF1A64188A00C0F260 /* HomeViewController.h */,
 				2E4BB6D01A64188A00C0F260 /* HomeViewController.m */,
-				2E4BB6D11A64188A00C0F260 /* NavigationViewController.h */,
-				2E4BB6D21A64188A00C0F260 /* NavigationViewController.m */,
 				2E4BB6D31A64188A00C0F260 /* ProfileViewController.h */,
 				2E4BB6D41A64188A00C0F260 /* ProfileViewController.m */,
+				2E4BB6D11A64188A00C0F260 /* NavigationViewController.h */,
+				2E4BB6D21A64188A00C0F260 /* NavigationViewController.m */,
 				2E4BB6D51A64188A00C0F260 /* RootViewController.h */,
 				2E4BB6D61A64188A00C0F260 /* RootViewController.m */,
-				2E4BB7131A6562EE00C0F260 /* BearbrickViewController.h */,
-				2E4BB7141A6562EE00C0F260 /* BearbrickViewController.m */,
-				2E4BB7151A6562EE00C0F260 /* BearbrickViewController.xib */,
 			);
 			path = ReMenuView;
 			sourceTree = "<group>";
@@ -972,8 +972,8 @@
 				2EAF80C01A527019002AF2A3 /* cross@2x.png in Resources */,
 				FD0AFDB319F4BDC600F7A41C /* sample.xls in Resources */,
 				2E4BB6471A54329A00C0F260 /* icon_image_History.png in Resources */,
+				2E4BB7491A656C8B00C0F260 /* BearBrickTableViewController.xib in Resources */,
 				FD0AFDAD19F4BDC600F7A41C /* sample.rtf in Resources */,
-				2E4BB7171A6562EE00C0F260 /* BearbrickViewController.xib in Resources */,
 				2E4BB71F1A65632700C0F260 /* SWCustomCell.xib in Resources */,
 				FD0AFD6A19F4BD5000F7A41C /* AddPage@2x.png in Resources */,
 				FD0AFD6B19F4BD5000F7A41C /* Dir.png in Resources */,
@@ -1020,7 +1020,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E4BB7161A6562EE00C0F260 /* BearbrickViewController.m in Sources */,
 				2EAF80941A518DFC002AF2A3 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				2E4BB7391A65668B00C0F260 /* SnoopyViewController.m in Sources */,
 				2E4BB71E1A65632700C0F260 /* SWCustomCell.m in Sources */,
@@ -1038,6 +1037,7 @@
 				2E4ACFE319C9B932000E9726 /* main.m in Sources */,
 				2E4BB6F81A65621200C0F260 /* FirstViewController.m in Sources */,
 				2E4BB6DB1A64188A00C0F260 /* ProfileViewController.m in Sources */,
+				2E4BB7481A656C8B00C0F260 /* BearBrickTableViewController.m in Sources */,
 				2EAF80921A518DFC002AF2A3 /* SWLongPressGestureRecognizer.m in Sources */,
 				2E4BB7281A65664B00C0F260 /* EGOlibraryViewController.m in Sources */,
 				2EAF80EB1A52A322002AF2A3 /* CustomColor.m in Sources */,

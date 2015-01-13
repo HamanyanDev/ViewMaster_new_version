@@ -13,8 +13,8 @@
 #import "ExploreViewController.h"
 #import "ActivityViewController.h"
 #import "ProfileViewController.h"
-#import "FirstViewController.h"
-#import "Define.h";
+
+#import "BearBrickTableViewController.h"
 
 @interface NavigationViewController () <REMenuDelegate>
 
@@ -26,40 +26,25 @@
 
 - (void)viewDidLoad
 {
-    
-        NSLog(@"hamana____NavigationViewController____viewDidLoad");
-    
     [super viewDidLoad];
     if (REUIKitIsFlatMode()) {
+        NSLog(@"hama_aaaa");
         [self.navigationBar performSelector:@selector(setBarTintColor:) withObject:[UIColor colorWithRed:0/255.0 green:213/255.0 blue:161/255.0 alpha:1]];
         self.navigationBar.tintColor = [UIColor whiteColor];
     } else {
+        NSLog(@"hama_bbbb");
         self.navigationBar.tintColor = [UIColor colorWithRed:0 green:179/255.0 blue:134/255.0 alpha:1];
     }
     
-    [UINavigationBar appearance].barTintColor = PINC_COLOR;
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:H_BUTTON_CANCEL
-//                                                                              style:UIBarButtonItemStyleDone
-//                                                                             target:self
-//                                                                             action:@selector(CancelButtonTap)];
-    
-
-    
     __typeof (self) __weak weakSelf = self;
-    REMenuItem *homeItem = [[REMenuItem alloc] initWithTitle:@"Home"
-                                                    subtitle:@"Return to Home Screen"
+    REMenuItem *homeItem = [[REMenuItem alloc] initWithTitle:@"BearBrick"
+                                                    subtitle:@"Show BearBrick!!"
                                                        image:[UIImage imageNamed:@"Icon_Home"]
                                             highlightedImage:nil
                                                       action:^(REMenuItem *item) {
                                                           NSLog(@"Item: %@", item);
-//                                                          HomeViewController *controller = [[HomeViewController alloc] init];
-//                                                          [weakSelf setViewControllers:@[controller] animated:NO];
-                                                          NSLog(@"hamana home return");
-                                                          [self dismissViewControllerAnimated:YES completion:nil];
-
-//                                                          FirstViewController *firsthome = [[FirstViewController alloc] init];
-//                                                          [self.navigationController pushViewController:firsthome animated:YES];
-                                                          
+                                                          BearBrickTableViewController *bearbrickView = [[BearBrickTableViewController alloc] init];
+                                                          [weakSelf setViewControllers:@[bearbrickView] animated:NO];
                                                       }];
     
     REMenuItem *exploreItem = [[REMenuItem alloc] initWithTitle:@"Explore"
@@ -82,7 +67,11 @@
                                                               [weakSelf setViewControllers:@[controller] animated:NO];
                                                           }];
     
-    activityItem.badge = @"12";
+    NSString *mbudge_num = @"0";
+    if(![mbudge_num  isEqual: @"0"]){
+        activityItem.badge = mbudge_num;
+    }
+
     
     REMenuItem *profileItem = [[REMenuItem alloc] initWithTitle:@"Profile"
                                                           image:[UIImage imageNamed:@"Icon_Profile"]
@@ -157,7 +146,6 @@
 
 - (void)toggleMenu
 {
-    NSLog(@"hamana____NavigationViewController____toggleMenu");
     if (self.menu.isOpen)
         return [self.menu close];
     

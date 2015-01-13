@@ -17,9 +17,10 @@
 
 - (void)viewDidLoad
 {
-    NSLog(@"hamana____RootViewController____viewDidLoad");
-
     [super viewDidLoad];
+    
+    NSLog(@"hama_RootViewController__viewDidLoad_start");
+    
     self.view.backgroundColor = [UIColor colorWithWhite:0.902 alpha:1.000];
     
     // Here self.navigationController is an instance of NavigationViewController (which is a root controller for the main window)
@@ -46,8 +47,6 @@
 
 - (void)viewWillLayoutSubviews
 {
-    NSLog(@"hamana____RootViewController__viewWillLayoutSubviews");
-
     [super viewWillLayoutSubviews];
     NavigationViewController *navigationController = (NavigationViewController *)self.navigationController;
     [navigationController.menu setNeedsLayout];
@@ -58,15 +57,11 @@
 
 - (BOOL)shouldAutorotate
 {
-    NSLog(@"hamana____RootViewController");
-
     return YES;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
-    NSLog(@"hamana____RootViewController__shouldAutorotateToInterfaceOrientation");
-
     return YES;
 }
 

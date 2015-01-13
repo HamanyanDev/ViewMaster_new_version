@@ -1,28 +1,27 @@
 //
-//  TableEditTableViewController.m
+//  BearbrickViewController.m
 //  ViewMaster
 //
-//  Created by tvt on 2014/10/03.
-//  Copyright (c) 2014年 HiroyukiHamana. All rights reserved.
+//  Created by bearbrick on 2015/01/13.
+//  Copyright (c) 2015年 HiroyukiHamana. All rights reserved.
 //
 
-#import "TableEditTableViewController.h"
+#import "BearbrickViewController.h"
 
-@interface TableEditTableViewController ()
+@interface BearbrickViewController ()
 
 @end
 
-@implementation TableEditTableViewController
+@implementation BearbrickViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"hamana_tableeditview");
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSLog(@"hamana_viewdid_end");
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,25 +32,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-     NSLog(@"hamana_vnumberOFSections");
-    return 1;
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-     NSLog(@"hamana_numberofRowsInsection");
-    return 1;
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"
-                                                            forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    
+    // Configure the cell...
     
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.

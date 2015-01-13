@@ -41,7 +41,7 @@
         [_items addObject:@"WebViewController"];
         [_items addObject:@"FirstFirstViewController"];
         [_items addObject:@"EditViewController"];
-        [_items addObject:@"ForthViewController"];
+        [_items addObject:@"StoryboardViewController"];
         [_items addObject:@"QuickLookViewController"];
         [_items addObject:@"EGOlibraryTableViewController"];
         [_items addObject:@"FBTableViewController"];
@@ -122,17 +122,22 @@
         [self.navigationController pushViewController:table animated:YES];
     } else if (indexPath.row == 3){
         
-        forthView = [[ForthViewController alloc] init];
-        
-        
-        NSString *storyboardName = @"ForthViewController";
-        
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-        
-        UIViewController *con = [sb instantiateInitialViewController];
-        
-        [self.navigationController pushViewController:con animated:YES];
+//        forthView = [[ForthViewController alloc] init];
+//        
+//        NSString *storyboardName = @"ForthViewController";
+//        UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+//        UIViewController *con = [sb instantiateInitialViewController];
+//        [self.navigationController pushViewController:con animated:YES];
 
+        
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ForthViewController" bundle:nil];     //ファイル名
+        UINavigationController *navi =
+        [[UINavigationController alloc] initWithRootViewController:[storyboard instantiateViewControllerWithIdentifier:@"favoriteViewController"]];                //StoryboardID
+        
+        [self presentViewController:navi animated:YES completion:nil];
+
+        
         
 
         

@@ -18,6 +18,8 @@
 {
     self.title = @"Explore";
     [super viewDidLoad];
+    
+    
 }
 
 @end
